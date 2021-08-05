@@ -1,25 +1,81 @@
+body{
+    font-family: "Spectral", Garamond, serif;
+    font-size: 16pt;
+}
+
 .inline-block{
     display: inline-block;
     vertical-align: top;
 }
 
+h1{
+    font-family: "Alice", Georgia, serif;
+}
+
+h2{
+    font-family: "Style Script", Georgia, serif;
+}
+
+button{
+    font-family: "Spectral", Garamond, serif;
+    color: #17A398;
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    padding: 0%;
+    font-size: 16pt;
+}
+
 /* Header */
 
-.logo{
-    width: 23%;
-    padding: 1%;
-    text-align: center;
-}
-
-nav{
-    width: 50%;
-    padding: 1%;
-}
-
-ul{
-    width: 50%;
-    margin-left: auto;
-}
+#navigation{
+    height: 64px;
+  }
+  
+  .tn{
+      float: left;
+      width: 12.9%;
+      height: 100%;
+      background-color: rgb(16, 4, 14, 0.25);
+  }
+  
+  .nav{
+      float: left;
+      width: 61.2%;
+      height: 100%;
+      background-color: #10040E;
+      color: #EEEEFF;
+      font-family: "Spectral SC", Garamond, serif;
+      font-size: 20pt;
+  }
+  
+  .spaced{
+      padding-left: 50px;
+      text-align: center;
+      vertical-align: middle;
+  }
+  
+  .contactBar{
+      background-color: rgb(16, 4, 14, 0.25);
+      width: 12.9%;
+      height: 100%;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+  
+  .linkedIn{
+      padding: 7.9px;
+      padding-bottom: 10px;
+  }
+  
+  .email{
+      padding-top: 15px;
+  }
+  
+  ul{
+      width: 50%;
+      margin-left: auto;
+  }
 
 /* Page Content */
 
@@ -35,14 +91,18 @@ ul{
 
 /* Footer */
 
-footer{
+#footer{
     background-color: #373738;
     color: white;
     padding-right: 30%;
+    font-size: 12pt;
 }
 
-footer ul{
+#footer.footList{
     display: inline-block;
     vertical-align: top;
-    padding-left: 50%;
+    background-color: #373738;
+    color: white;
+    padding-right: 30%;
+    font-size: 12pt;
 }
