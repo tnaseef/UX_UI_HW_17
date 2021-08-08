@@ -39,6 +39,10 @@ ul{
     text-decoration: underline;
 }
 
+.opt{ /* Keep optional items from displaying */
+    display: none;
+}
+
 
 /* Header */
 /* WIP
@@ -102,6 +106,7 @@ WIP */
     margin: 0 auto;
 }
 
+
 /* Skills Page */
 
 #skills{
@@ -116,8 +121,16 @@ WIP */
     outline: 1px solid red;
 }
 
-.opt{ /* Keep optional items from displaying */
-    display: none;
+
+/* Works Page */
+
+#works{
+    outline: 1px solid red;
+}
+
+.workHead{
+    outline: 1px solid red;
+    text-decoration: underline;
 }
 
 /* Footer */
