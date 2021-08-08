@@ -1,5 +1,9 @@
 /* Universal Elements */
 
+a{
+    color: #17A398;
+}
+
 body{
     font-family: "Spectral", Garamond, serif;
     font-size: 16pt;
