@@ -1,0 +1,11 @@
+<img src="Images/arrow left.png" alt="-->"
+                width="42"
+                height="42">
+
+<img src="Images/arrow curve.png" alt="-->"
+                    width="51.1"
+                    height="51.1"> 
+
+<img src="Images/document.png"
+                    width="35"
+                    height="35">

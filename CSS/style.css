@@ -43,6 +43,7 @@ h2{
 
 #header{
     height: 64px;
+    width: 100%;
     display: inline-grid;
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 100px;
@@ -71,6 +72,7 @@ h2{
 
 .nav ul{
     text-align: center;
+    padding-right: 20mm;
 }
 .nav li{
     display: inline;
@@ -101,16 +103,80 @@ h2{
 
 /* Homepage Content */
 
-.heroImg{
-    height: 600px;
+.hero{
+    outline: 1px solid red;
+    height: auto;
     padding: 25px;
+
 }
 
-.content{
-    width: 500px;
+.intro{
+    outline: 1px solid red;
+    width: 1000px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    grid-template-areas:
+    "img txt"
+    ;
 }
 
+.intro img{
+    grid-area: img;
+}
+
+.intro p{
+    grid-area: txt;
+}
+
+.h1{
+    font-family: "Alice", Georgia, serif;
+    font-size: 35px;
+}
+
+.fancy{
+    font-family: "Style Script", Georgia, serif;
+    font-size: 35px;
+}
+
+.about{
+    outline: 1px solid red;
+}
+
+.focus{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.skills{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.resume{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.works{
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.works img{
+    outline: 2px solid #441151;
+    flex: 1 1 1;
+}
+
+.contactHome{
+    outline: 1px solid red;
+    padding: 40px;
+    text-align: center;
+}
 
 /* Skills Page */
 
