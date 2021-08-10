@@ -1,9 +1,5 @@
 /* Universal Elements */
 
-a{
-    color: #17A398;
-}
-
 body{
     font-family: "Spectral", Garamond, serif;
     font-size: 16pt;
@@ -130,12 +126,27 @@ WIP */
 
 #works{
     outline: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .workHead{
     outline: 1px solid red;
     text-decoration: underline;
+    color: #17A398;
 }
+
+.flexFull{
+    width: 100%;
+}
+
+.flexCard{
+    flex-grow: 1;
+    text-align: center;
+}
+
 
 /* Footer */
 /* WIP

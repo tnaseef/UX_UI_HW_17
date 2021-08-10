@@ -7,16 +7,17 @@
 
     <body>
         <header id="navigation">
-            <div class="tn">
+            <div class="tn"> <a href="index.html">
                 <img src="images/Color logo.png" alt="TN Logo"
                 width="105"
                 height="68.6">
+                </a>
             </div>
             <nav class="nav">
                 <ul>
-                    <li class="navTxt">Skills</li>
-                    <li class="navTxt">Works</li>
-                    <li class="navTxt">Fun Me</li>
+                    <a href="skills.html"><li class="navTxt">Skills</li></a>
+                    <a href="works.html"><li class="navTxt">Works</li></a>
+                    <a href="..."><li class="navTxt">Fun Me</li></a>
                 </ul>
             </nav>
             <div class="contactBar">
@@ -31,42 +32,42 @@
             </div>
         </header>
 
-        <section id="works">
-            <div>
+        <section id="works"> <!-- Uses CSS Flex -->
+            <div class="flexFull">
                 <h1 id="pgHead">WORKS</h1>
             </div>
 
-            <div>
-                <h1 class="listHead">Bootcamp Exercizes</h1>
+            <div class="flexFull">
+                <h1 class="listHead">Bootcamp Exercises:</h1>
             </div>
 
-            <div>
+            <div class="flexCard">
                 <a href="..."> <!-- Should link to case study -->
                 <p class="workHead">GeekMeet</p>
                 <img src="Images/GeekMeet.png" alt="GeekMeet Preview" width="428" height="352">
                 </a>
             </div>
-            <div>
+            <div class="flexCard">
                 <a href="..."> <!-- Should link to case study -->
                 <p class="workHead">pReTravel</p>
                 <img src="Images/pReTravel.png" alt="pReTravel Preview" width="428" height="352">
                 </a>
             </div>
-            <div>
+            <div class="flexCard">
                 <a href="..."> <!-- Should link to case study -->
                 <p class="workHead">Feathered Friends Forever</p>
                 <img src="Images/FFF.png" alt="Feathered Friends Forever Preview" width="428" height="352"> 
                 </a>
             </div>
 
-            <div>
+            <div class="flexFull opt">
                 <!-- OPTIONAL -->
-                <h1 class="listHead opt">Previous Work</h1> <!-- Section for works from previous jobs -->
+                <h1 class="listHead">Previous Work</h1> <!-- Section for works from previous jobs -->
             </div>
 
-            <div>
+            <div class="flexFull opt">
                 <!-- OPTIONAL -->
-                <h1 class="listHead opt">Just For Fun</h1> <!-- Section for projects done for fun -->
+                <h1 class="listHead">Just For Fun</h1> <!-- Section for projects done for fun -->
             </div>
 
         </section>
