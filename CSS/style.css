@@ -23,11 +23,6 @@ h2{
     font-family: "Style Script", Georgia, serif;
 }
 
-ul{
-    width: 50%;
-    margin-left: auto;
-}
-
 #pgHead{
     font-size: 40px;
     text-align: center;
@@ -45,54 +40,7 @@ ul{
 
 
 /* Header */
-/* WIP
-#navigation{
-  height: 64px;
-}
 
-.tn{
-    float: left;
-    width: 12.9%;
-    height: 100%;
-    background-color: rgb(16, 4, 14, 0.25);
-}
-
-.nav{
-    float: left;
-    width: 61.2%;
-    height: 100%;
-    background-color: #10040E;
-    color: #EEEEFF;
-    font-family: "Spectral SC", Garamond, serif;
-    font-size: 20pt;
-    list-style-type: none;
-}
-
-.navTxt{
-    padding-left: 50px;
-    text-align: center;
-    font-size: 20pt;
-    vertical-align: middle;
-}
-
-.contactBar{
-    background-color: rgb(16, 4, 14, 0.25);
-    width: 12.9%;
-    height: 100%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-}
-
-.linkedIn{
-    padding: 7.9px;
-    padding-bottom: 10px;
-}
-
-.email{
-    padding-top: 15px;
-}
-WIP */
 
 /* Homepage Content */
 
@@ -111,16 +59,55 @@ WIP */
 
 #skills{
     outline: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "pgHead pgHead pgHead pgHead"
+        "empathy creative tools code"
+        "more more more more"
+        ;
+        
+}
+
+.skillHead{
+    grid-area: pgHead;
+    justify-self: stretch;
 }
 
 .skillCard{
     outline: 1px solid red;
 }
 
+.skillCard .icon{
+    display: block;
+    margin: 18px auto;
+}
+
+.empathy{
+    grid-area: empathy;
+}
+
+.creative{
+    grid-area: creative;
+}
+
+.tools{
+    grid-area: tools;
+}
+
+.code{
+    grid-area: code;
+}
+
 .miscSkills{
+    grid-area: more;
     outline: 1px solid red;
 }
 
+.miscSkills li{
+    display: inline;
+}
 
 /* Works Page */
 
@@ -149,25 +136,76 @@ WIP */
 
 
 /* Footer */
-/* WIP
-footer{
-    background-color: #10040E;
-    color: white;
-    font-size: 12pt;
-  }
 
-.footList{
-    display: inline-block;
-    color: white;
-    padding-right: 30%;
-    font-size: 12pt;
-    list-style-type: none;
+
+
+/* Mobile Media Query */
+@media only screen and (max-width: 1000){ /*change back to 600 once it's working*/
+   
+    #works{ /* Flex Container */
+        outline: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .flexCard{ /* Flex Child */
+        width: 100%;
+        text-align: center;
+    }
+
+    #skills{ /* Grid Container */
+        outline: 1px solid red;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "pgHead"
+            "empathy"
+            "creative"
+            "tools"
+            "code"
+            "more"
+            ;
+    }
+
+.skillHead{
+    grid-area: pgHead;
+    justify-self: stretch;
 }
 
-.footLI{
-  padding-right: 30%;
-  display: inline-block;
-  vertical-align: top
+.skillCard{
+    outline: 1px solid red;
 }
 
-WIP */
+.skillCard .icon{
+    display: block;
+    margin: 18px auto;
+}
+
+.empathy{
+    grid-area: empathy;
+}
+
+.creative{
+    grid-area: creative;
+}
+
+.tools{
+    grid-area: tools;
+}
+
+.code{
+    grid-area: code;
+}
+
+.miscSkills{
+    grid-area: more;
+    outline: 1px solid red;
+}
+
+.miscSkills li{
+    display: inline;
+}
+}

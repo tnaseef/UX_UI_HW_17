@@ -1,0 +1,48 @@
+/* WIP
+#navigation{
+  height: 64px;
+}
+
+.tn{
+    float: left;
+    width: 12.9%;
+    height: 100%;
+    background-color: rgb(16, 4, 14, 0.25);
+}
+
+.nav{
+    float: left;
+    width: 61.2%;
+    height: 100%;
+    background-color: #10040E;
+    color: #EEEEFF;
+    font-family: "Spectral SC", Garamond, serif;
+    font-size: 20pt;
+    list-style-type: none;
+}
+
+.navTxt{
+    padding-left: 50px;
+    text-align: center;
+    font-size: 20pt;
+    vertical-align: middle;
+}
+
+.contactBar{
+    background-color: rgb(16, 4, 14, 0.25);
+    width: 12.9%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.linkedIn{
+    padding: 7.9px;
+    padding-bottom: 10px;
+}
+
+.email{
+    padding-top: 15px;
+}
+WIP */

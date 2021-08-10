@@ -1,0 +1,22 @@
+/* WIP
+footer{
+    background-color: #10040E;
+    color: white;
+    font-size: 12pt;
+  }
+
+.footList{
+    display: inline-block;
+    color: white;
+    padding-right: 30%;
+    font-size: 12pt;
+    list-style-type: none;
+}
+
+.footLI{
+  padding-right: 30%;
+  display: inline-block;
+  vertical-align: top
+}
+
+WIP */
