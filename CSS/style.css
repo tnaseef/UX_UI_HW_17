@@ -41,6 +41,63 @@ h2{
 
 /* Header */
 
+#header{
+    height: 64px;
+    display: inline-grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 100px;
+    grid-area:
+    "tn nav contact";
+}
+
+.tn{
+    background-color: rgb(16, 4, 14, 0.25);
+    margin: none;
+    padding: none;
+    text-align: center;
+}
+
+.tn img{
+    padding-top: 16px;
+}
+
+.nav{
+    background-color: #10040E;
+    font-family: "Spectral SC", Garamond, serif;
+    font-size: 20pt;
+    list-style-type: none;
+}
+
+
+.nav ul{
+    text-align: center;
+}
+.nav li{
+    display: inline;
+    padding-left: 50px;
+    font-size: 20pt;
+}
+
+.nav a{
+    color: #EEEEFF;
+    text-decoration: none;
+}
+
+.contactBar{
+    background-color: rgb(16, 4, 14, 0.25);
+}
+
+.linkedIn{
+    padding-left: 10px;
+    padding-bottom: 12px;
+    align-self: start;
+}
+
+.email{
+    padding-top: 8px;
+    align-self: center;
+}
+
 
 /* Homepage Content */
 
@@ -109,6 +166,7 @@ h2{
     display: inline;
 }
 
+
 /* Works Page */
 
 #works{
@@ -137,10 +195,30 @@ h2{
 
 /* Footer */
 
+footer{
+    background-color: #10040E;
+    color: #EEEEFF;
+    font-size: 10pt;
+  }
+
+.footList{
+    font-size: 12pt;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.footList a{
+    color: #EEEEFF !important;
+    text-decoration: none !important;
+}
+
+.footLI{
+  display: inline;
+}
 
 
 /* Mobile Media Query */
-@media only screen and (max-width: 1000){ /*change back to 600 once it's working*/
+@media only screen and (max-width: 600){
    
     #works{ /* Flex Container */
         outline: 1px solid red;
@@ -155,7 +233,7 @@ h2{
         text-align: center;
     }
 
-    #skills{ /* Grid Container */
+    #skills{ /* Grid Container -- Why isn't this working? */
         outline: 1px solid red;
         display: grid;
         grid-template-columns: 1fr;
@@ -169,43 +247,4 @@ h2{
             "more"
             ;
     }
-
-.skillHead{
-    grid-area: pgHead;
-    justify-self: stretch;
-}
-
-.skillCard{
-    outline: 1px solid red;
-}
-
-.skillCard .icon{
-    display: block;
-    margin: 18px auto;
-}
-
-.empathy{
-    grid-area: empathy;
-}
-
-.creative{
-    grid-area: creative;
-}
-
-.tools{
-    grid-area: tools;
-}
-
-.code{
-    grid-area: code;
-}
-
-.miscSkills{
-    grid-area: more;
-    outline: 1px solid red;
-}
-
-.miscSkills li{
-    display: inline;
-}
 }
