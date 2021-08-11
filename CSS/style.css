@@ -9,7 +9,7 @@ body{
 button{
     font-family: "Spectral", Garamond, serif;
     color: #17A398;
-    background-color: white;
+    background-color: transparent;
     border: none;
     text-decoration: underline;
     padding: 0%;
@@ -353,7 +353,7 @@ footer{
         text-align: center;
     }
 
-    #skills{ /* Grid Container -- Why isn't this working? */
+    #skills{ /* Grid Container */
         outline: 1px solid red;
         display: grid;
         grid-template-columns: 100%;

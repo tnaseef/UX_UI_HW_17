@@ -3,14 +3,22 @@ console.log("Your index.js file is loaded correctly!");
 var modal = document.getElementById("contactForm");
 
 // Get the button that opens the modal
-var btn = document.getElementById("contactButton");
+var btn = document.getElementsByClassName("contactButton");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btn[0].onclick = function() {
   modal.style.display = "block";
+}
+
+btn[1].onclick = function() {
+    modal.style.display = "block";
+}
+
+btn[2].onclick = function() {
+    modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
