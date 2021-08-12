@@ -219,6 +219,11 @@ h2{
     margin: 18px auto;
 }
 
+.skillCard .listHead{
+    text-align: center;
+    cursor: pointer;
+}
+
 .empathy{
     grid-area: empathy;
 }
@@ -258,6 +263,7 @@ h2{
 
 .miscSkills li{
     display: inline;
+    padding: 1px;
 }
 
 

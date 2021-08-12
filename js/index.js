@@ -3,24 +3,52 @@ console.log("Your index.js file is loaded correctly!");
 $(document).ready(function(){ //Empathy
     $("#flipE").click(function(){
       $("#panelE").slideDown("slow");
+      $("#vE").animate(
+        { deg: 0 },
+        {duration: 0, step: function(now) {
+            $(this).css({ transform: 'rotate(' + now + 'deg)' });
+          }
+        }
+      );
     });
 });
 
 $(document).ready(function(){ //Creativity
     $("#flipC").click(function(){
       $("#panelC").slideDown("slow");
+      $("#vC").animate(
+        { deg: 0 },
+        {duration: 0, step: function(now) {
+            $(this).css({ transform: 'rotate(' + now + 'deg)' });
+          }
+        }
+      );
     });
 });
 
 $(document).ready(function(){ //Tools
     $("#flipT").click(function(){
       $("#panelT").slideDown("slow");
+      $("#vT").animate(
+        { deg: 0 },
+        {duration: 0, step: function(now) {
+            $(this).css({ transform: 'rotate(' + now + 'deg)' });
+          }
+        }
+      );
     });
 });
 
 $(document).ready(function(){ //Tools
   $("#flipCo").click(function(){
     $("#panelCo").slideDown("slow");
+    $("#vCo").animate(
+      { deg: 0 },
+      {duration: 0, step: function(now) {
+          $(this).css({ transform: 'rotate(' + now + 'deg)' });
+        }
+      }
+    );
   });
 });
 
