@@ -18,6 +18,12 @@ $(document).ready(function(){ //Tools
     });
 });
 
+$(document).ready(function(){ //Tools
+  $("#flipCo").click(function(){
+    $("#panelCo").slideDown("slow");
+  });
+});
+
 //MODAL
 
 // Get the modal

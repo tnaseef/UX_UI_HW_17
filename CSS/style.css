@@ -1,5 +1,7 @@
 /* Universal Elements */
 
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Spectral+SC:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,400;0,700;1,400;1,700&family=Style+Script&display=swap');
+
 body{
     font-family: "Spectral", Garamond, serif;
     font-size: 16pt;
@@ -144,6 +146,8 @@ h2{
 
 .about{
     outline: none;
+    margin-left: 11.5%;
+    padding: 25px;
 }
 
 .focus{
@@ -188,6 +192,8 @@ h2{
 
 #skills{
     outline: none;
+    margin-left: 50px;
+    margin-right: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -241,6 +247,10 @@ h2{
     grid-area: code;
 }
 
+#panelCo{
+    display: none;
+}
+
 .miscSkills{
     grid-area: more;
     outline: none;
@@ -255,10 +265,16 @@ h2{
 
 #works{
     outline: none;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+#works img{
+    outline: 2px solid #441151; 
 }
 
 .workHead{
