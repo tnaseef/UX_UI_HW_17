@@ -300,8 +300,6 @@ h2{
 
 
 /* Modal - Pulled from W3 Schools */
-/*WIP
-
 
 .modal{
     display: none;
@@ -343,13 +341,12 @@ h2{
   cursor: pointer;
 }
 
-.subButton{
+#submit{
     background-color: #441151;
     color: #EEEEFF;
     padding: 10px;
     border-radius: 10px;
 }
-WIP*/
 
 
 /* Footer */
