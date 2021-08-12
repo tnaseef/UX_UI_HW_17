@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="CSS/style.css">
         <title>Tineke Naseef - Home</title>
         <script src="https://kit.fontawesome.com/bce27edc38.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -35,7 +36,7 @@
         </header>
 
 
-        <section class="hero"> <!-- HW 17 -->
+        <section class="hero">
             <div class="intro">
                 <img src="Images/tink.png" alt="Image of Tink (Me)"
                 width="375.2"
@@ -60,13 +61,18 @@
             </div>
             <div class="skills">
                 <p>My favorite part of the UX design process is User Research and Ideation, but I enjoy all of it!
-                <br> <i class="fas fa-long-arrow-alt-right"></i>
-                    Learn more about my <button>Skills </button> <i class="fas fa-cogs"></i> </br> </p>
+                <br><i class="fas fa-long-arrow-alt-right"></i>
+                    Learn more about my <a href="skills.html">Skills </a> <i class="fas fa-cogs"></i> </br> </p>
             </div>    
             <div class="resume">
-                <p>I'm a fresh face in the UX field, but I have over 5 years of experience helping both customers and clients.
-                <br><i class="fas fa-long-arrow-alt-right"></i> 
-                    Check out my <button>Resume </button> <i class="fas fa-file-download" style="font-size: 90%"></i> </br> </p>
+                <p>
+                    <form method="get" action="Images/Resume.docx">
+                        I'm a fresh face in the UX field, but I have over 5 years of experience helping both customers and clients.
+                        <br><i class="fas fa-long-arrow-alt-right"></i>                     
+                        Check out my <button type="submit">Resume</button>
+                        <i class="fas fa-file-download" style="font-size: 90%"></i> </br>
+                    </form> 
+                </p>
             </div>           
         </section>
 
@@ -93,7 +99,7 @@
         </section>
 
 
-        <section id="contactForm" class="modal"> <!-- Pulled from W3 Schools -->
+       <!--WIP <section id="contactForm" class="modal">  Pulled from W3 Schools
             <div class="modalContent">
                 <span class="close">&times;</span>
                 <h1>GET IN TOUCH</h1>
@@ -107,7 +113,7 @@
                     <input type="submit" value="Submit">
                 </form> 
             </div>
-        </section>
+        </section> WIP-->
 
 
          <footer>

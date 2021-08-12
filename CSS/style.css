@@ -31,7 +31,7 @@ h2{
 }
 
 .listHead{
-    outline: 1px solid red;
+    outline: none;
     font-size: 20pt;
     text-decoration: underline;
 }
@@ -106,14 +106,14 @@ h2{
 /* Homepage Content */
 
 .hero{
-    outline: 1px solid red;
+    outline: none;
     height: auto;
     padding: 25px;
 
 }
 
 .intro{
-    outline: 1px solid red;
+    outline: none;
     width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -143,7 +143,7 @@ h2{
 }
 
 .about{
-    outline: 1px solid red;
+    outline: none;
 }
 
 .focus{
@@ -156,13 +156,17 @@ h2{
     padding-bottom: 20px;
 }
 
+.skills a{
+    color: #17A398;
+}
+
 .resume{
     padding-left: 50px;
     padding-bottom: 20px;
 }
 
 .works{
-    outline: 1px solid red;
+    outline: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -175,7 +179,7 @@ h2{
 }
 
 .contactHome{
-    outline: 1px solid red;
+    outline: none;
     padding: 40px;
     text-align: center;
 }
@@ -183,7 +187,7 @@ h2{
 /* Skills Page */
 
 #skills{
-    outline: 1px solid red;
+    outline: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -201,7 +205,7 @@ h2{
 }
 
 .skillCard{
-    outline: 1px solid red;
+    outline: none;
 }
 
 .skillCard .icon{
@@ -213,12 +217,24 @@ h2{
     grid-area: empathy;
 }
 
+#panelE{
+    display: none;
+}
+
 .creative{
     grid-area: creative;
 }
 
+#panelC{
+    display: none;
+}
+
 .tools{
     grid-area: tools;
+}
+
+#panelT{
+    display: none;
 }
 
 .code{
@@ -227,7 +243,7 @@ h2{
 
 .miscSkills{
     grid-area: more;
-    outline: 1px solid red;
+    outline: none;
 }
 
 .miscSkills li{
@@ -238,7 +254,7 @@ h2{
 /* Works Page */
 
 #works{
-    outline: 1px solid red;
+    outline: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -246,7 +262,7 @@ h2{
 }
 
 .workHead{
-    outline: 1px solid red;
+    outline: none;
     text-decoration: underline;
     color: #17A398;
 }
@@ -262,15 +278,15 @@ h2{
 
 
 /* Modal - Pulled from W3 Schools */
-
+/*WIP
 
 
 .modal{
     display: none;
-    position: fixed; /* Stay in place */
+    position: fixed;
     z-index: 1;
-    left: 0; /*??*/
-    top: 0; /*??*/
+    left: 0; 
+    top: 0; 
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -280,11 +296,11 @@ h2{
 
 .modalContent{
     background-color: #EEEEFF;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #441151;
     text-align: center;
-    width: 70%; /* Could be more or less, depending on screen size */
+    width: 70%;
 }
 
 .left{
@@ -311,6 +327,7 @@ h2{
     padding: 10px;
     border-radius: 10px;
 }
+WIP*/
 
 
 /* Footer */
@@ -328,8 +345,14 @@ footer{
 }
 
 .footList a{
-    color: #EEEEFF !important;
-    text-decoration: none !important;
+    color: #EEEEFF;
+    text-decoration: none;
+}
+
+.footList button{
+    color: #EEEEFF;
+    text-decoration: none;
+    font-size: 12pt;
 }
 
 .footLI{
@@ -338,10 +361,10 @@ footer{
 
 
 /* Mobile Media Query */
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 600px){
    
     #works{ /* Flex Container */
-        outline: 1px solid red;
+        outline: none;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -354,10 +377,10 @@ footer{
     }
 
     #skills{ /* Grid Container */
-        outline: 1px solid red;
+        outline: none;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr 1fr 400px 300px;
         grid-template-areas:
             "pgHead"
             "empathy"
