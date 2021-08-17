@@ -52,7 +52,7 @@ h2{
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 100px;
     grid-area:
-    "tn nav contact";
+    "tn mynav contact";
 }
 
 .tn{
@@ -66,7 +66,7 @@ h2{
     padding-top: 16px;
 }
 
-.nav{
+.mynav{
     background-color: #10040E;
     font-family: "Spectral SC", Garamond, serif;
     font-size: 20pt;
@@ -74,17 +74,17 @@ h2{
 }
 
 
-.nav ul{
+.mynav ul{
     text-align: center;
     padding-right: 20mm;
 }
-.nav li{
+.mynav li{
     display: inline;
     padding-left: 50px;
     font-size: 20pt;
 }
 
-.nav a{
+.mynav a{
     color: #EEEEFF;
     text-decoration: none;
 }
@@ -298,6 +298,180 @@ h2{
     text-align: center;
 }
 
+
+/* GeekMeet Case Study */
+
+#gmbody{
+    text-align: center;
+}
+
+.gmnav ul{
+    padding-top: 25px;
+}
+
+.caseBack{
+    margin-top: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.caseBack a{
+    color: #441151;
+}
+
+.purpH1{
+    color: #441151;
+    font-family: "Alice", Georgia, serif;
+}
+
+.caseIntro{
+    font-size: 28pt;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #441151;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.container{
+    margin-bottom: 80px;
+}
+
+.row{
+    text-align: left;
+}
+
+.nav{
+    margin-bottom: 80px;
+}
+
+.nav-link{
+    color: #17A398 !important;
+    text-decoration: underline;
+}
+
+#research{
+    outline: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.protoVal{
+    padding-left: 10px;
+}
+
+.researchTxt{
+    width: 70%;
+    padding: 80px;
+}
+
+.rRight{
+    align-self: center;
+}
+
+.stickies{
+    max-width: 34.915%;
+}
+
+.userPersona{
+    max-width: 65.085%;
+}
+
+#definition{
+    outline: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.competitors{
+    max-width: 60%;
+}
+
+.features{
+    max-width: 40%;
+}
+
+.defTxt{
+    padding: 80px;
+}
+
+.problem{
+    padding: 20px;
+}
+
+#ideation{
+    outline: none;
+}
+
+#ideation a{
+    color: #17A398;
+    text-decoration: underline;
+}
+
+.iTxt{
+    padding: 80px;
+}
+
+.uFlow{
+    max-width: 100%;
+}
+
+.tFlow{
+    max-width: 100%;
+}
+
+#wireframing{
+    outline: none;
+}
+
+.wTxt{
+    padding: 80px;
+}
+
+#carouselExampleIndicators{
+    margin-left: 25%
+}
+
+#testing{
+    outline: none;
+}
+
+.tTxt{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 75%;
+    padding-left: 25%;
+}
+
+.tImg{
+    width: auto;
+    height: 500px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.testRes{
+    max-width: 100%;
+}
+
+#prototype{
+    margin: 80px;
+}
+
+#prototype a{
+    background-color: #441151;
+    color: #EEEEFF;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
 
 /* Modal - Pulled from W3 Schools */
 

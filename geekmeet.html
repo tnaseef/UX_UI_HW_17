@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body> 
+<body id="gmbody"> 
     <header id="header">
         <div class="tn"> <a href="index.html">
             <img src="Images/Color logo.png" alt="TN Logo"
@@ -12,7 +12,7 @@
             height="68.6">
             </a>
         </div>
-        <nav class="nav">
+        <nav class="mynav gmnav">
             <ul>
                 <a href="skills.html"><li>Skills</li></a>
                 <a href="works.html"><li>Works</li></a>
@@ -31,33 +31,39 @@
             class="email"> </button>
         </div>
     </header>
-    
-    <a href="works.html">< Back</a> <!-- Replace "<" with icon? + Needs Padding -->
+   
+    <div class="caseBack">
+        <a href="works.html">< Back</a> <!-- Replace "<" with icon? -->
+    </div>
 
-    <h1> MOBILE APP </h1>
-    <h1>GeekMeet</h1> <!--Text color #441151-->
+    <div id="gmH1">
+        <br>
+        <h1> MOBILE APP </h1>
+        <h1 class="purpH1">GeekMeet</h1>
+        <br>
+        <br>
+        <img src="Images/geekmeet head.png" alt="GeekMeet Hero Image"> <!-- Resize? -->
+    </div>
 
-
-    <img src="Images/geekmeet head.png" alt="GeekMeet Hero Image"> <!--Needs resizing-->
-
-    <p>An app designed to connect geeks through common interests...
-    ...with a focus on community, safety and customization
-    </p> <!-- Text color #441151 + change font size + align center -->
+    <div class="caseIntro">
+        <p>An app designed to connect geeks through common interests - with a focus on community, safety and customization.
+        </p>
+    </div>
 
     <!-- Introduction: Bootstrap 4 col system-->
     <div class="container"> 
         <div class="row">
           <div class="col-sm">
-            <p>TIMELINE</p>
+            <p class="bold">TIMELINE</p>
             <p>2 Weeks, from research to low-fidelity prototype.</p> <!--Remove top padding-->
           </div>
           <div class="col-sm">
-            <p>GOAL</p>
+            <p class="bold">GOAL</p>
             <p>Along with my two teammates, I created a prototype for an app centered around community and shared interests, 
                 with a focus on customization and safety.</p> <!--Remove top padding-->
           </div>
           <div class="col-sm">
-            <p>MY ROLE & RESPONSIBILITIES</p>
+            <p class="bold">MY ROLE & RESPONSIBILITIES</p>
             <ul>
                 <li>User Research</li>
                 <li>Wireframing</li>
@@ -66,45 +72,48 @@
             </ul>
           </div>
         </div>
-      </div>
-      
+    </div>
+
     <!-- In-page nav: Bootstrap 4 nav component-->
     <ul class="nav nav-fill"> 
         <li class="nav-item">
-          <a class="nav-link active" href="#">Research</a>
+          <a class="nav-link" href="#research">Research</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Definition</a>
+          <a class="nav-link" href="#definition">Definition</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ideation</a>
+          <a class="nav-link" href="#ideation">Ideation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Prototype</a>
+          <a class="nav-link" href="#prototype">Prototype</a>
         </li>
-      </ul>
+    </ul>
 
-      <img src="Images/proto persona.png" alt="Valkyrie Lucas - Proto-Persona">
-
-      <p>
+      
+    <section id="research">
+      <img src="Images/proto persona.png" alt="Valkyrie Lucas - Proto-Persona" class="protoVal">
+    
+      <p class="researchTxt rRight">
         We started with a dating app specifically for geeks, 
         but through our research found that wasn't actually the main interest of most of our users. 
         As such, we switched gears to a community/fandom sharing app.
       </p>
-
-      <img src="Images/arrow stickies.png" alt="-->">
-      <img src="Images/user persona.png" alt="Valkyrie Lucas - User Persona">
-
-      <p>
+      <img src="Images/arrow stickies.png" alt="-->" class="stickies">  
+      <img src="Images/user persona.png" alt="Valkyrie Lucas - User Persona" class="userPersona">
+      <p class="researchTxt rCent">
         For our research, I planned and conducted 2 of our 5 interviews. 
         I also built a <span>Google Survey</span> and analyzed both direct and indirect competitors. <!--How to implement survey results?-->
         From our research, we created the persona of Valkyrie Lucas, a streamer interested in meeting people who share her interests.
       </p>
+    </section>
 
-      <img src="Images/competitor analysis.png" alt="Competitor Analysis">
-      <img src="Images/feature prioritization matrix.png" alt="Feature Prioritization Matrix">
 
-      <p>
+    <section id="definition">
+      <img src="Images/competitor analysis.png" alt="Competitor Analysis" class="competitors">
+      <img src="Images/feature prioritization matrix.png" alt="Feature Prioritization Matrix" class="features">
+
+      <p class="defTxt">
         Based on our research and our persona, we landed on three key features:
         <br>
         <br>Privacy/Moderation
@@ -116,30 +125,38 @@
 
       <img src="Images/user storyboard.png" alt="Storyboard">
       
-      <p>
+      <p class="defTxt">
         I drafted up a user insight statement, that led into our problem statement:
       </p>
       <img src="Images/problem statement.png" alt="Those who identify as nerds and geeks need a way to meet and chat with people
-        who share their interests, while feeling safe and welcome.">
+        who share their interests, while feeling safe and welcome." class="problem">
+    </section>
 
-      <p>
+
+    <section id="ideation">
+      <p class="iTxt">
         Now we're ready to move on to our 
-        <span><a href="https://whimsical.com/pr-1-gr-3-user-flow-9EYssQoVnsSpxS6zUzFciP" target="_blank" rel="noreferrer noopener">user flow</a></span>
+        <span><a href="https://whimsical.com/pr-1-gr-3-user-flow-9EYssQoVnsSpxS6zUzFciP" target="_blank" rel="noreferrer noopener">
+            user flow</a></span>
       </p>
       
-      <img src="Images/user flow.png" alt="User Flow"> <!--Embed instead?-->
+      <img src="Images/user flow.png" alt="User Flow" class="uFlow"> <!--Embed instead?-->
 
-      <p>For the sake of time, we decided to focus on the specific task flow of joining a community.</p>
+      <p class="iTxt">For the sake of time, we decided to focus on the specific task flow of joining a community.</p>
 
       <img src="Images/task flow.png" 
-      alt="Homescreen -> Go to Communities -> Input Search Term -> Receive Search Results -> View Community -> Like? -> Join Community">
+      alt="Homescreen -> Go to Communities -> Input Search Term -> Receive Search Results -> View Community -> Like? -> Join Community"
+      class="tFlow">
+    </section>
 
-      <p>
+
+    <section id="wireframing">
+      <p class="wTxt">
         While wireframing, I added a frame showing the user selecting a chat, in order to show more functionality.
       </p>
 
       <!--Carousel w Paper Wireframes - INSERT IMAGES-->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide w-50" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -147,13 +164,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="Images/paper 1.png" class="d-block w-100" alt="Paper Wireframes: Splash, Sign In & Homepage">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="Images/paper 2.png" class="d-block w-100" alt="Paper Wireframes: Communities, Search Results & Community">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="Images/paper 3.png" class="d-block w-100" alt="Paper Wireframes: Rule Popup, Community Joined & Choose a Chat">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -165,32 +182,38 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+    </section>
 
-      <p>
+
+    <section id="testing">
+      <p class="tTxt">
         Through the course of prototyping, our team opted to show the process of joining a group chat, and reporting a message, 
         as well as options to personalize their profile and change settings. This allowed us to showcase even more of the focus on 
         customization/personalization and safety.
       </p>
 
-      <img src="Images/profile.png" alt="Profile Digital Wireframe"> <!--Put into carousel?-->
-      <img src="Images/interests.png" alt="Interests Digital Wireframe">
-      <img src="Images/settings.png" alt="Settings Digital Wireframe">
+      <img src="Images/profile.png" alt="Profile Digital Wireframe" class="tImg"> <!--Put into carousel?-->
+      <img src="Images/interests.png" alt="Interests Digital Wireframe" class="tImg">
+      <img src="Images/settings.png" alt="Settings Digital Wireframe" class="tImg">
 
-      <p>
+      <p class="tTxt">
         I was personally responsible for building out the profile and settings in the prototype.
       </p>
 
-      <img src="Images/testing results.png">
+      <img src="Images/testing results.png" class="testRes">
 
-      <p>
+      <p class="tTxt">
         Our testing process was a little unconventional: as we tested the prototype, we iterated on simple changes between each test. 
         Each of the green sticky notes above was a testing insight we iterated on before the next test.
       </p>
 
       <img src="Images/iterations.png" alt="Iterations">
+    </section>
 
-      <p>
-        Now it's your turn.
+
+    <section id="prototype">
+    <p>
+        <span class="purpH1">Now it's your turn.</span>
         <br>
         <br>
         Put yourself in Valkyrie's shoes...
@@ -200,12 +223,15 @@
         <br>
         Don't worry, this low-fi prototype will only let you select the options you actually need.
       </p>
-
-      <button>
+      <br>
+      <a href="https://www.figma.com/proto/7E9nUrLtzbHZuceQZGjSXS/Prototype?page-id=0%3A1&node-id=3%3A4&viewport=-1635%2C499%2C0.3881143033504486&scaling=scale-down"
+      target="_blank" rel="noreferrer noopener">
           PLAY
-      </button>
+      </a>
+    </section>
 
-      <footer>
+
+    <footer>
         <ul class="footList">
             <a href="index.html"><li class="footLI">Home |</li></a>
             <a href="skills.html"><li class="footLI"> Skills |</li></a>
